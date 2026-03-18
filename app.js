@@ -1,5 +1,7 @@
 const express = require(`express`);
-const db = require(`./db/connection`);
+const movieRouter = require("./routers/movieRouter");
+const notFound = require("./middlewares/notFound");
+const errorHandler = require("./middlewares/errorHandler");
 
 const app = express();
 const port = 3000;
