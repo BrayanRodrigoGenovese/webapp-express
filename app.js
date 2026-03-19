@@ -5,6 +5,8 @@ const errorHandler = require("./middlewares/errorHandler");
 
 const app = express();
 const port = 3000;
+const cors = require("cors");
+app.use(cors({ origin: "http://localhost:5173" }));
 
 app.use(express.static("public"));
 app.use(express.json());
