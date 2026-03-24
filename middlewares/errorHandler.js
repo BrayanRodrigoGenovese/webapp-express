@@ -1,8 +1,8 @@
 function errorHandler(err, req, res, next) {
     console.error(err.stack);
 
-    res.statuts(500).json({
-        succes: false,
+    res.status(500).json({
+        success: false,
         message: "Errore interno del server",
     });
 }
